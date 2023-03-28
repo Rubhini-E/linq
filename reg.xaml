@@ -1,0 +1,140 @@
+﻿<Window x:Class="generic.reg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:generic"
+        mc:Ignorable="d"
+        Title="reg" Height="750" Width="1300">
+    <!--<Window.Resources>
+        <Style  TargetType="ListView">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="18"/>
+         </Style>
+        </Window.Resources>-->
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,0">
+                <GradientStop Color="LightPink" Offset="0.3"></GradientStop>
+                <GradientStop Color="SteelBlue" Offset="1.2"></GradientStop>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="81*"></ColumnDefinition>
+            <ColumnDefinition Width="49*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border BorderBrush="Gray" Background="Black"  Opacity="0.6"  BorderThickness="2" Margin="90,90,240,90" >
+            <Border.Effect>
+                <DropShadowEffect Color="Black" ShadowDepth="7" Opacity="0.3"></DropShadowEffect>
+            </Border.Effect>
+            <Grid Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Width="666">
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="87*"></RowDefinition>
+                    <RowDefinition Height="30*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0*"></ColumnDefinition>
+                    <ColumnDefinition Width="203*"></ColumnDefinition>
+                    <ColumnDefinition Width="276*"></ColumnDefinition>
+                    <ColumnDefinition Width="187*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+
+                <TextBlock Foreground="IndianRed" FontWeight="UltraBold" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Comic Sans MS" Margin="2,0,0,0" Grid.Column="2" Height="28" Width="156" >
+                    <TextBlock>
+                        <Underline> Register Here!!!! </Underline>
+                    </TextBlock>
+                </TextBlock>
+
+                <TextBlock Text="NAME" Grid.Row="2" FontSize="20" Foreground="White" FontWeight="ExtraBold" VerticalAlignment="Center" Margin="16,0,0,0" Grid.Column="1" Height="26"/>
+                <TextBox x:Name="txtname" Grid.Row="2" Grid.Column="2" FontSize="18" VerticalContentAlignment="Bottom" BorderBrush="White" BorderThickness="2" Background="Black" Foreground="Gray" FontWeight="ExtraBold"  Margin="3,10,117,13"/>
+
+                <TextBlock Text="DATE OF BIRTH" Grid.Row="3" FontSize="20" Foreground="White" FontWeight="ExtraBold" VerticalAlignment="Center" Margin="16,0,0,0" Grid.Column="1" Height="26"/>
+                <TextBox x:Name="txtdob" Grid.Row="3" Grid.Column="2" FontSize="18" VerticalContentAlignment="Bottom" BorderBrush="White" BorderThickness="2" Background="Black" Foreground="Gray" FontWeight="ExtraBold"   Margin="3,10,117,13"></TextBox>
+
+                <TextBlock Text="GENDER" Grid.Row="4" FontSize="20" Foreground="White" FontWeight="ExtraBold" VerticalAlignment="Center" Margin="16,0,0,0" Grid.Column="1" Height="26"/>
+                <StackPanel x:Name="rb"  Orientation="Horizontal" Grid.Row="4" Grid.ColumnSpan="2"   Grid.Column="2" VerticalAlignment="Center" Margin="15,0,15,0" Height="30" >
+                    <RadioButton Content="Male   " x:Name="rbm"  FontSize="23" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center"></RadioButton>
+                    <RadioButton Content="Female  " x:Name="rbf"  FontSize="23" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center"></RadioButton>
+                    <!--<RadioButton Content="Transgender" x:Name="rbt" FontSize="23" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center"></RadioButton>-->
+                </StackPanel>
+                <TextBlock Text="QUALIFICATION" Grid.Row="5" FontSize="20" Foreground="White" FontWeight="ExtraBold" VerticalAlignment="Center" Margin="16,0,0,0" Grid.Column="1" Height="26"/>
+                <TextBox x:Name="txtqul" Grid.Row="5" Grid.Column="2" FontSize="18" VerticalContentAlignment="Bottom" BorderBrush="White" BorderThickness="2" Background="Black" Foreground="Gray" FontWeight="ExtraBold"  Margin="3,10,117,13"></TextBox>
+
+                <TextBlock Text="EMAIL ID" Grid.Row="6" FontSize="20" Foreground="White" FontWeight="ExtraBold" VerticalAlignment="Center" Margin="16,0,0,0" Grid.Column="1" Height="26"/>
+                <TextBox x:Name="txtmail" Grid.Row="6" Grid.Column="2" FontSize="18" VerticalContentAlignment="Bottom" BorderBrush="White" BorderThickness="2" Background="Black" Foreground="Gray" FontWeight="ExtraBold"   Margin="3,10,117,13"></TextBox>
+
+                <TextBlock Text="CONTACT NO" Grid.Row="7" FontSize="20" Foreground="White" FontWeight="ExtraBold" VerticalAlignment="Center" Margin="16,0,0,0" Grid.Column="1" Height="26"/>
+                <TextBox x:Name="txtnum" Grid.Row="7" Grid.Column="2" FontSize="18" VerticalContentAlignment="Bottom" BorderBrush="White" BorderThickness="2" Background="Black" Foreground="Gray" FontWeight="ExtraBold"  Margin="3,10,117,0" Height="27" VerticalAlignment="Top"></TextBox>
+
+
+
+                <!--<Label Content="ADDRESS" Grid.Row="8" FontSize="20" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center" Grid.ColumnSpan="2" Margin="368,5,0,0"/>-->
+                <!--<TextBox x:Name="txtadd" Grid.Row="8" Grid.Column="2" FontSize="18" AcceptsReturn="True" VerticalContentAlignment="Top" BorderBrush="White" BorderThickness="2" Background="Black" Foreground="Gray" FontWeight="ExtraBold"   Margin="3,11,112,34" Grid.RowSpan="2"></TextBox>-->
+
+                <Button Content="REGISTER" Click="Button_Click" Grid.Row="8" Grid.Column="2" Margin="0,47,146,14" FontSize="17"  Background="White" Foreground="Black" FontWeight="ExtraBlack" BorderBrush="IndianRed" BorderThickness="6" Grid.RowSpan="2"/>
+            </Grid>
+        </Border>
+
+        <Border BorderBrush="Gray" Background="Black"  Opacity="0.55"  BorderThickness="2" Margin="735,84,50,90" Grid.ColumnSpan="2" >
+            <Border.Effect>
+                <DropShadowEffect Color="Black" ShadowDepth="7" Opacity="0.3"></DropShadowEffect>
+            </Border.Effect>
+            <Grid Grid.Column="1" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <!--<ColumnDefinition Width="143*"></ColumnDefinition>-->
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+
+                </Grid.RowDefinitions>
+                <TextBlock Foreground="DodgerBlue" FontWeight="UltraBold" FontSize="20" HorizontalAlignment="Center"  FontFamily="Comic Sans MS"  Width="156" Margin="0,40,0,40" >
+                    <TextBlock Width="188">
+                        <Underline> Search Here!!!!</Underline>
+                    </TextBlock>
+                </TextBlock>
+                <StackPanel Orientation="Horizontal" Grid.Row="1">
+                    <TextBlock Text="NAME"  FontSize="20" Foreground="White" FontWeight="ExtraBold" VerticalAlignment="Center" Margin="96,0,0,0"  Height="26"/>
+                    <TextBox x:Name="txtname1"  FontSize="18" VerticalContentAlignment="Bottom" BorderBrush="White" BorderThickness="2" Background="Black" Foreground="Gray" FontWeight="ExtraBold" Height="26" Width="150" Margin="23,10,30,13"/>
+                    <Button  Content="GO" Click="Button_Click_1" FontSize="17"  Background="White" Foreground="Black" FontWeight="ExtraBlack" BorderBrush="DeepSkyBlue" BorderThickness="6" Height="37" Width="60" />
+                </StackPanel>
+
+                <ListView Visibility="Hidden" x:Name="lstview" Foreground="DarkBlue"  Grid.Row="1"  FontSize="15" ItemsSource="{Binding}"  VerticalAlignment="Top" Grid.RowSpan="2"   HorizontalAlignment="Center" Margin="0,111,0,0" Width="485">
+                    <ListView.View>
+                        <GridView >
+                            <GridViewColumn   Header="Name" Width="65" DisplayMemberBinding="{Binding name}" ></GridViewColumn>
+                            <GridViewColumn   Header="DOB"  Width="65" DisplayMemberBinding="{Binding dob}"  ></GridViewColumn>
+                            <GridViewColumn   Header="Gender" Width="90"  DisplayMemberBinding="{Binding gen}" ></GridViewColumn>
+                            <GridViewColumn   Header="Qualification" Width="90"  DisplayMemberBinding="{Binding qual}" ></GridViewColumn>
+                            <GridViewColumn   Header="Email ID" Width="80"  DisplayMemberBinding="{Binding email}"  ></GridViewColumn>
+                            <GridViewColumn   Header="Contact "  DisplayMemberBinding="{Binding contact}"  ></GridViewColumn> 
+                            <!--DisplayMemberBinding="{Binding contact}"-->
+
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
